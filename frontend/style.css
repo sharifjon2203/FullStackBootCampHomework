@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+
+.bg-blu {
+    background-color: #07cddb;
+}
+
+.rounded-pill:hover {
+    color: rgb(133, 131, 134);
+    margin-left: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-bg-green {
+    background: rgb(21, 186, 21) !important;
+}
+
+.link-hover:hover {
+    font-weight: bold;
+    color: rgb(211, 211, 206);
+
+}
+
+.bg-dangerr {
+    background: rgb(242, 78, 78);
+}
+
+.submit {
+    width: 100%;
+}
+
+.formDiv {
+    box-shadow: 0px 10px 47px -7px rgba(0, 0, 0, 0.1) !important;
+    /* border: 3px solid gray; */
+}
