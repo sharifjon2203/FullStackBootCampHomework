@@ -11,15 +11,16 @@
         crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Ro'yxatdan O'tish</title>
+    <title>Create an Account</title>
 </head>
 
 <body>
     <div class="container">
         <div class="row d-flex min-vh-100 justify-content-center align-items-center pt-5">
             <div class=" rounded-4 formDiv  py-4 px-5 col-12 col-sm-9 col-md-8 col-lg-6 col-xl-4 p-4">
+                <div id="alert"></div>
                 <h3 class="text-center p-3">Create an Account</h3>
-                <form action="">
+                <form id="formDiv">
                     <div class="mb-3">
                         <label for="email" class="form-label">Email:</label>
                         <input type="text" class="form-control" id="email">
@@ -30,12 +31,14 @@
                     </div>
                     <a class="text-align-center" href="login.html">Login</a>
                     <div class="d-flex justify-content-center">
-                        <button type="submit" class="my-3 submit btn btn-success">Create account</button>
+                        <button id="submitBtn" type="submit" class="my-3 submit btn btn-success">Create account</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+
+    <script src="scripts/resgistration.js"></script>
 </body>
 
 </html>

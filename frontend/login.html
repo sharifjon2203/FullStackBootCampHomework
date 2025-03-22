@@ -11,15 +11,22 @@
         crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Kirish</title>
+    <title>Login</title>
 </head>
 
 <body>
     <div class="container ">
         <div class="row min-vh-100 d-flex align-items-center justify-content-center pt-5">
-            <div class="formDiv rounded-4 py-4 px-5 col-12 col-sm-9 col-md-8 col-lg-6 col-xl-4 p-4">
+            <div id="mainSection" class="formDiv rounded-4 py-4 px-5 col-12 col-sm-9 col-md-8 col-lg-6 col-xl-4 p-4">
+
+                <!-- <div class="text-center p-3">
+                    <h3>Profile Details:</h3>
+                    <h5>Email: johndoe@gmail.com</h5>
+                </div> -->
+
+                <div id="alert"></div>
                 <h3 class="text-align-center p-3">Login to your account</h3>
-                <form action="">
+                <form id="formDiv">
 
                     <div class="mb-3">
                         <label for="email" class="form-label">Email:</label>
@@ -31,12 +38,16 @@
                     </div>
                     <a class="text-align-center" href="index.html">Sign Up</a>
                     <div class="d-flex justify-content-center">
-                        <button type="submit" class=" my-3 submit btn btn-success">Login now</button>
+                        <button id="submitBtn" type="submit" class=" my-3 submit btn btn-success">Login now</button>
                     </div>
                 </form>
+
+
             </div>
         </div>
     </div>
+
+    <script src="scripts/login.js"></script>
 </body>
 
 </html>
