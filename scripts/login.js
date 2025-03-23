@@ -33,7 +33,8 @@ form.addEventListener("submit", () => {
     event.preventDefault()
     let email = document.querySelector("#email").value;
     let pass = document.querySelector("#password").value;
-    let API = "http://localhost:5000/api/v1"
+    // let API = "http://localhost:5000/api/v1"  // to test locally
+    let API = "https://full-stack-boot-camp-homework.vercel.app/api/v1"
     fetch(`${API}/login`, {
         method: 'POST',
         headers: {
