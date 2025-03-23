@@ -33,8 +33,12 @@ form.addEventListener("submit", () => {
     event.preventDefault()
     let email = document.querySelector("#email").value;
     let pass = document.querySelector("#password").value;
-    // let API = "http://localhost:5000/api/v1"  // to test locally
-    let API = "https://full-stack-boot-camp-homework.vercel.app/api/v1"
+    // let API = "http://localhost:5000/api/v1"  // local ishga tushurib ishltish mumkin hammasi ishlaydi
+
+    // let API = "https://full-stack-boot-camp-homework.vercel.app/api/v1"; // Bu ishlamayabdi vercelda backendga ulanmayabdi. faqat frontend ishlatoldim vercelda
+
+    let API = "http://164.152.20.153:5000/api/v1/login"   //  bu shu to'liq loyihani ishlayotgan server lekin html ,css frontend ko'rinmayabdi
+
     fetch(`${API}/login`, {
         method: 'POST',
         headers: {
